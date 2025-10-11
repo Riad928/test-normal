@@ -1,0 +1,151 @@
+/* ====== RESET & GLOBAL ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ====== HEADER ====== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background: #007bff;
+  color: white;
+}
+
+.submit-btn {
+  background: #28a745;
+  color: white;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* ====== MAIN CONTENT ====== */
+.content {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  background: #222;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+}
+
+.footer-section a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.social-links a {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.footer input[type="email"] {
+  padding: 6px;
+  width: 80%;
+  margin-bottom: 6px;
+}
+
+.subscribe-btn {
+  background: #007bff;
+  color: #fff;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    background: #333;
+    padding: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-right {
+    flex: 1 1 100%;
+    justify-content: space-between;
+  }
+}
