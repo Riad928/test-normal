@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Layout Example</title>
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
@@ -38,39 +38,43 @@
     </main>
 
     <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-section">
-            <h3>Contact Info</h3>
-            <p>Email: info@mybrand.com</p>
-            <p>Phone: +880 1720138513</p>
-        </div>
-
-        <div class="footer-section">
-            <h3>Follow Us</h3>
-            <div class="social-links">
-                <a href="#">🌐</a>
-                <a href="#">📘</a>
-                <a href="#">🐦</a>
+    <footer class="bg-gray-900 text-gray-300 mt-10 py-8 ">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="footer-section">
+                    <h3 class="text-xl pb-4 text-center font-semibold">Quick Links</h3>
+                    <ul class="">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="mt-1 md:mt-0">
+                    <h3 class="text-xl pb-4">Contact Info</h3>
+                    <p>Email: info@mybrand.com</p>
+                    <p>Phone: +880 1720138513</p>
+                </div>
+                
+                <div class="mt-1 md:mt-0">
+                    <h3 class="pb-4 text-center text-xl font-semibold" >Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">🌐</a>
+                        <a href="#">📘</a>
+                        <a href="#">🐦</a>
+                    </div>
+                </div>
+                
+                <div class="mt-1 md:mt-0">
+                    <h3 class="pb-4 font-semibold text-xl">Newsletter</h3>
+                    <input type="email" class="py-2 px-3 text-gray-200 border border-2xl shadow-lg" placeholder="Enter your email" />
+                    <button type="submit"class="bg-blue-500 px-6 py-3 hover:bg-blue-700 rounded-xl text-white font semibold transition shadow-md">Subscribe</button>
+                </div>
             </div>
-        </div>
-
-        <div class="footer-section">
-            <h3>Newsletter</h3>
-            <input type="email" placeholder="Enter your email" />
-            <button class="btn subscribe-btn">Subscribe</button>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+   
 </body>
 
 
